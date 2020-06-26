@@ -92,20 +92,20 @@
       <br>
     <td>Educational qualification:</td>
       <td>
-        <select>
-        <option value="Qualifications"> PhD</option>
-        <option value="Qualifications"> Masters</option>
-        <option value="Qualifications"> BSc</option>
-        <option value="Qualifications"> HND</option>
-        <option value="Qualifications"> ND</option>
-        <option value="Qualifications"> NCE</option>
-        <option value="Qualifications"> Others</option>
+        <select id="qualification" onchange=getqual()>
+        <option > PhD</option>
+        <option > Masters</option>
+        <option > BSc</option>
+        <option > HND</option>
+        <option> ND</option>
+        <option> NCE</option>
+        <option> Others</option>
       </select>
     </td>
     </tr>
     <tr>
       <td>Years of experience</td>
-      <td><input type="number" name="experience"></td>
+      <td><input type="number" name="experience" id="Year" onchange="getYear()"></td>
     </tr>
       </table>
     </div>
@@ -145,11 +145,11 @@
           </tr>
           <tr>
             <td>Educational qualification:</td>
-              <td>Masters</td>
+              <td><span id="displayQ"></span></td>
           </tr>
           <tr>
             <td>Years of experience</td>
-            <td>20</td>
+            <td><span id="displayYear"></span></td>
           </tr>
     </form>
 

@@ -35,3 +35,13 @@ function getState(){
   var displayState = document.getElementById('displayState');
   displayState.textContent = State;
 }
+function getqual(){
+  var qualification= document.getElementById('qualification').value;
+  var displayQ = document.getElementById('displayQ');
+  displayQ.textContent= qualification;
+}
+function getYear(){
+  var Year = document.getElementById('Year').value;
+  var displayYear = document.getElementById('displayYear');
+  displayYear.textContent=Year;
+}
